@@ -1,0 +1,433 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&family=Poppins:wght@100;400&display=swap");
+
+* {
+	box-sizing: border-box;
+}
+
+:root {
+	--grayBlue-text: #647589;
+	--blue-info-btn: #207ea1;
+	--darkblue-btn: #144766;
+	--text-color: #3b505c;
+	--text-link: #125066;
+	--btn-link: #2b68a6;
+	--text-link-active: #115c78;
+	--product-bg: #e3e3e3;
+	--nav-bg: #0f1010;
+	--yellowActive-link: #e9c46a;
+	--red-text: #ff0000;
+}
+
+@font-face {
+	font-family: "Adlanta", sans-serif;
+	src: url(../fonts/Adlanta\ Regular.otf);
+}
+
+html,
+body {
+	height: 100%;
+}
+
+body {
+	font-family: "Adlanta", sans-serif;
+	display: flex;
+	flex-direction: column;
+	background-image: url(../images/bg_img/brick-wall.png);
+	font-size: 18px;
+	margin: 0;
+	color: var(--text-color);
+}
+
+h1 {
+	font-size: 1.5rem;
+	color: var(--green-btn);
+}
+
+h2 {
+	color: var(--nav-bg);
+}
+
+h3 {
+	font-size: 1.2rem;
+}
+
+h4,
+h5 {
+	font-family: "Adlanta", sans-serif;
+	color: var(--text-color);
+	font-size: 1.1rem;
+	font-weight: bold;
+}
+
+h6 {
+	font-family: "Adlanta", sans-serif;
+	color: var(--text-color);
+}
+
+p {
+	font-family: "Adlanta", sans-serif;
+	margin: 0 auto;
+	width: 90%;
+	max-width: 900px;
+	padding: 1rem;
+	line-height: 1.5;
+	padding-bottom: 2rem;
+}
+
+.heading,
+.heading-categories {
+	font-family: "Playfair Display", serif;
+	font-size: 1.8rem;
+	line-height: 2;
+	text-align: center;
+	padding: 2rem 0 1rem 0;
+	font-weight: 900;
+}
+
+.heading-categories {
+	color: var(--nav-bg);
+}
+
+.wrapper {
+	flex: 1 0 auto;
+}
+
+.container,
+.container-fluid,
+.footer_container {
+	width: 90%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.container {
+	padding-top: 1em;
+	padding-bottom: 2em;
+}
+
+.category-item {
+	margin: 1rem;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	min-width: 0;
+	word-wrap: break-word;
+	border-radius: 0.25rem;
+	box-shadow: 1px 1px 2px 1px rgba(126, 124, 124, 0.8);
+}
+
+.categories {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	color: white;
+	background-color: rgba(91, 97, 100, 0.9);
+	background-image: url(../images/bg_img/brick-wall.png);
+	margin-top: 2rem;
+	padding-bottom: 3rem;
+	border-top-right-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.container-products {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	background-color: var(--product-bg);
+	border-bottom-right-radius: 5px;
+	border-bottom-left-radius: 5px;
+	padding-bottom: 2rem;
+}
+
+.container-popular {
+	background-color: #d4d4d4;
+}
+
+.bold-text {
+	font-weight: 600;
+	font-size: 0.9rem;
+}
+
+.before-price {
+	text-decoration: line-through;
+}
+
+.now-price {
+	color: var(--red-text);
+}
+
+.view-all-btn {
+	text-align: center;
+	height: 100px;
+	padding-bottom: 3rem;
+}
+
+.footer {
+	padding: 2rem 1.5rem;
+	flex-shrink: 0;
+	font-size: 0.8em;
+	color: white;
+	background-color: var(--nav-bg);
+}
+
+.footer_container {
+	display: grid;
+	grid-template-columns: 2fr 1fr;
+}
+
+.footer_container--icon {
+	display: flex;
+	justify-content: space-between;
+	width: 80%;
+}
+
+.footer_container--copyright {
+	margin: 1rem 0;
+}
+
+.footer_container--company {
+	color: var(--yellowActive-link);
+}
+
+i.fab,
+i.fas {
+	font-size: 2rem;
+}
+
+/* Custom bootstrap */
+
+.container-lg {
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+}
+
+.row {
+	--bs-gutter-x: 0rem;
+}
+
+a.card-text {
+	font-family: "Poppins", sans-serif;
+	color: var(--text-color);
+	text-decoration: none;
+}
+
+a.card-text:hover {
+	color: var(--text-link-active);
+}
+
+.bg-light {
+	background: var(--nav-bg) !important;
+	color: #ffffff;
+}
+
+.navbar-nav {
+	margin-left: 1.5rem;
+	font-family: "Poppins", sans-serif;
+}
+
+.navbar-light .navbar-toggler {
+	color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.nav-link .navbar-light .navbar-nav .show > .nav-link {
+	color: #ffffff;
+}
+
+.navbar-light .navbar-nav .nav-link.active {
+	color: var(--yellowActive-link);
+	text-decoration: overline;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+	color: #e9c46a;
+}
+
+.navbar-toggler {
+	background-color: #fff;
+	border: 1 px solid #fff;
+}
+
+.navbar-brand {
+	padding-top: 0.3125 rem;
+	padding-bottom: 0.3125 rem;
+	margin-right: 1 rem;
+	text-decoration: none;
+	white-space: nowrap;
+	width: 130px;
+}
+
+button {
+	font-family: "Poppins", sans-serif;
+}
+
+.btn-outline-success {
+	color: var(--yellowActive-link);
+	border-color: var(--yellowActive-link);
+}
+
+.btn-outline-success:hover {
+	background-color: var(--yellowActive-link);
+	border-color: var(--yellowActive-link);
+	color: black;
+}
+
+.btn-link {
+	color: var(--text-link-active);
+	background-color: #ffffff;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0.5em 1em;
+	margin: 1em;
+	font-weight: bold;
+}
+
+.btn-link:hover {
+	background-color: var(--text-link-active);
+	color: #ffffff;
+	font-weight: 600;
+}
+
+.btn-info {
+	background: var(--blue-info-btn);
+	color: #ffffff;
+	font-weight: 400;
+	border: 1px solid var(--blue-info-btn);
+	margin: 1rem 0;
+}
+
+.btn-info:hover {
+	background: var(--darkblue-btn);
+	color: #ffffff;
+	border: 1px solid var(--darkblue-btn);
+}
+
+.card {
+	background-color: transparent;
+	box-shadow: 1px 1px 0px 0px rgba(255, 255, 255, 0.1);
+	margin-bottom: 2rem;
+}
+
+.card-body {
+	text-align: center;
+	background-color: #e8e8e8;
+	border-bottom-left-radius: 0.25rem;
+	border-bottom-right-radius: 0.25rem;
+}
+
+.carousel-inner {
+	border: 3px solid #ffffff;
+	border-radius: 5px;
+}
+
+.carousel-indicators {
+	margin-bottom: 2rem;
+}
+
+.carousel-indicators [data-bs-target] {
+	width: 30px;
+	height: 30px;
+	margin-right: 0.5em;
+	margin-left: 0.5em;
+	border: 1px solid #fff;
+	border-radius: 50%;
+	box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px,
+		rgba(0, 0, 0, 0.23) 0px 6px 6px;
+}
+
+@media (max-width: 575px) {
+	body {
+		background-color: var(--nav-bg);
+		background-image: none;
+	}
+
+	.heading,
+	.heading-categories {
+		font-size: 1.2rem;
+		line-height: 1.5;
+		font-weight: 900;
+		padding-bottom: 1rem;
+	}
+
+	.carousel-indicators [data-bs-target] {
+		width: 15px;
+		height: 15px;
+	}
+
+	.footer_container {
+		grid-template-columns: 1fr;
+	}
+
+	.footer_container > div {
+		padding: 1rem 0;
+	}
+
+	.footer_container--icon {
+		width: 60%;
+		flex-shrink: 0;
+		align-items: center;
+	}
+
+	i.fab {
+		font-size: 1.8rem;
+	}
+
+	.bold-text {
+		font-size: 1rem;
+	}
+}
+
+@media (min-width: 576px) {
+	.category-item {
+		width: 14rem;
+		margin: 0.5rem;
+	}
+
+	.card {
+		width: 14rem;
+		margin: 0.5rem;
+	}
+}
+
+@media (min-width: 768px) {
+	.category-item,
+	.card {
+		width: 13rem;
+		margin: 0.5rem;
+	}
+}
+
+@media (min-width: 992px) {
+	.category-item {
+		width: 15rem;
+	}
+
+	.card {
+		width: 16rem;
+		margin: 0 auto;
+	}
+
+	.container {
+		padding-top: 2em;
+		padding-bottom: 3em;
+	}
+}
+
+@media (min-width: 1200px) {
+	.category-item {
+		width: 9.5rem;
+		margin: 0.5rem;
+	}
+
+	.card {
+		width: 20rem;
+		margin: 0 auto;
+	}
+}
+
+@media (min-width: 1400px) {
+	.category-item {
+		width: 10rem;
+		margin: 1rem;
+	}
+}

@@ -28,7 +28,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	background-image: url(../images/bg_img/brick-wall.png);
-	font-size: 18px;
+	/* font-size: 18px; */
 	margin: 0;
 	color: var(--text-color);
 }
@@ -75,7 +75,7 @@ p {
 	font-size: 1.8rem;
 	line-height: 2;
 	text-align: center;
-	padding: 2rem 0 1rem 0;
+	padding: 2rem 0 0 0;
 	font-weight: 900;
 }
 

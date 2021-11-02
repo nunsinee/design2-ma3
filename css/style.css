@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;900&family=Poppins:wght@100;400&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@200;300;400;500&family=Playfair+Display:wght@400;600;900&family=Poppins:wght@100;400&display=swap");
 
 * {
 	box-sizing: border-box;
@@ -18,18 +18,13 @@
 	--red-text: #ff0000;
 }
 
-@font-face {
-	font-family: "Adlanta", sans-serif;
-	src: url(../fonts/Adlanta\ Regular.otf);
-}
-
 html,
 body {
 	height: 100%;
 }
 
 body {
-	font-family: "Adlanta", sans-serif;
+	font-family: "Mulish", sans-serif;
 	display: flex;
 	flex-direction: column;
 	background-image: url(../images/bg_img/brick-wall.png);
@@ -53,19 +48,19 @@ h3 {
 
 h4,
 h5 {
-	font-family: "Adlanta", sans-serif;
+	font-family: "Mulish", sans-serif;
 	color: var(--text-color);
 	font-size: 1.1rem;
-	font-weight: bold;
+	font-weight: 600;
 }
 
 h6 {
-	font-family: "Adlanta", sans-serif;
+	font-family: "Mulish", sans-serif;
 	color: var(--text-color);
 }
 
 p {
-	font-family: "Adlanta", sans-serif;
+	font-family: "Mulish", sans-serif;
 	margin: 0 auto;
 	width: 90%;
 	max-width: 900px;
@@ -144,7 +139,7 @@ p {
 }
 
 .bold-text {
-	font-weight: 600;
+	font-weight: 500;
 	font-size: 0.9rem;
 }
 

@@ -244,12 +244,9 @@ a.card-text:hover {
 }
 
 .navbar-brand {
-	padding-top: 0.3125 rem;
-	padding-bottom: 0.3125 rem;
-	margin-right: 1 rem;
 	text-decoration: none;
 	white-space: nowrap;
-	width: 130px;
+	width: 120px;
 }
 
 button {

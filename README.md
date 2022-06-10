@@ -1,6 +1,6 @@
 # Lighting House - Design
 
-![image]()
+![image](./images/bg_img/lightingHouse.jpeg)
 
 Just web design for a shop that sells lamp and lights online.
 
